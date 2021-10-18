@@ -13,10 +13,10 @@ export function Banner() {
       py="3"
     >
       <Flex
-        justifyContent="space-between"
-        align="center"
+        justifyContent={["center", "space-between"]}
+        align={"center"}
         w="100%"
-        px={["10","20","20","20", "60"]}
+        px={["10", "20", "20", "20", "60"]}
       >
         <div>
           <Text color="light.100" fontSize="3xl">

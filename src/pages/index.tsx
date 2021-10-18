@@ -7,8 +7,22 @@ import { getPrismicClient } from "../services/prismic";
 import { GetStaticProps } from "next";
 
 import Prismic from "@prismicio/client";
+import { RichText } from "prismic-dom";
 
-export default function Home() {
+export interface IContinent {
+  slug: string;
+  data: {
+    title: string;
+    subtitle: string;
+    banner_continent: string;
+  };
+}
+
+interface HomeProps {
+  continents: IContinent[];
+}
+
+export default function Home({ continents }: HomeProps) {
   return (
     <>
       <Header isHome />
@@ -21,7 +35,7 @@ export default function Home() {
         <Heading fontWeight="500">Vamos nessa?</Heading>
         <Heading fontWeight="500">Então escolha seu continente</Heading>
       </Box>
-      <Swiper />
+      <Swiper continents={continents} />
     </>
   );
 }
@@ -29,18 +43,26 @@ export default function Home() {
 export const getStaticProps: GetStaticProps = async () => {
   const prismic = getPrismicClient();
 
-  const postsResponse = await prismic.query(
+  const continentsResponse = await prismic.query(
     [Prismic.predicates.at("document.type", "continent")],
     {
       pageSize: 10,
     }
   );
 
-  // TODO: integrar api com a página
-  console.log(postsResponse);
+  const continents = continentsResponse.results.map((continent) => {
+    return {
+      slug: continent.uid,
+      data: {
+        title: RichText.asText(continent.data.title),
+        subtitle: RichText.asText(continent.data.subtitle),
+        banner_continent: continent.data.banner_continent.url,
+      },
+    };
+  });
 
   return {
-    props: {},
+    props: { continents },
     revalidate: 60 * 60 * 24,
   };
 };
