@@ -1,37 +1,78 @@
-🚧 
-[x] Header 
+# worldtrip (https://worldtrip-rodrigorvsn.vercel.app/)
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!--- https://shields.io --->
 
-## Getting Started
+![GitHub repo size](https://img.shields.io/github/repo-size/rodrigorvsn/worldtrip?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/rodrigorvsn/worldtrip?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/rodrigorvsn/worldtrip?style=for-the-badge)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/rodrigorvsn/worldtrip?style=for-the-badge)
+![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/rodrigorvsn/worldtrip?style=for-the-badge)
 
-First, run the development server:
+___
+<!--- #################### mudar badges #################### --->
 
-```bash
-npm run dev
-# or
-yarn dev
+![image](https://user-images.githubusercontent.com/75763403/137393403-bcf20799-4b00-4827-826f-ff6dcc54beeb.png)
+
+<!--- #################### mudar imagem exemplo #################### --->
+___
+> Site to info about continents
+___
+## 💻 Prerequisites
+
+- Install LTS Node version.
+<!--- #################### mudar pré-requisitos  ####################--->
+___
+## 🛠 Tools used
+
+- Nextjs
+- Typescript
+- Chakra UI (https://chakra-ui.com/)
+- Prismic CMS (https://prismic.io/docs/technologies/home-prismic-and-nextjs) 
+- Swipper
+
+<!--- #################### mudar ferramentas #################### --->
+___
+## 🚀 Installing worldtrip
+
+To use, follow the steps:
+
 ```
+- git clone https://github.com/rodrigorvsn/worldtrip.git
+- yarn || npm install
+- yarn dev || npm dev
+```
+___
+## 🔒 ENV Example
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Check .env.example to see the env variables!
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+<!--- #################### mudar passos #################### --->
+___
+## 📫 Contribuiting with worldtrip
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+To contribue with worldtrip, follow the steps:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. Fork this repository.
+2. Create a branch: `git checkout -b <name_branch>`.
+3. Make the changes and confirm: `git commit -m '<message_commit>'`
+4. Send to original repository: `git push origin <main_branch> / <local>`
+5. Send the pull request.
 
-## Learn More
+Alternatively, see the GitHub documentation at [how to create a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+___
+## 🤝 Contributors
 
-To learn more about Next.js, take a look at the following resources:
+Made with ❤️ by:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://github.com/rodrigorvsn.png" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
+        <sub>
+          <b>Rodrigo Victor</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>

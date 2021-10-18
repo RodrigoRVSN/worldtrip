@@ -42,7 +42,7 @@ export function Swiper({ continents }: SwiperProps) {
               justify="center"
               textAlign="center"
             >
-              <Link href={`continent/${item.slug}`}>
+              <Link href={`/continent/${item.slug}`}>
                 <a>
                   <Box color="light.100">
                     <Text fontWeight="700" fontSize={["4xl", "5xl"]}>
